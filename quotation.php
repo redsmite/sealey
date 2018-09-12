@@ -7,76 +7,58 @@
 <link rel="stylesheet" href="css/fontawesome.css">
 <link rel="stylesheet" href="css/theme.css">
 <link rel="stylesheet" href="css/style.css">
-<body class="w3-content" style="max-width:1200px">
+<body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
-    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <h3 class="w3-wide"><b>SEALEY</b></h3>
-  </div>
-  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      Reports <i class="fa fa-caret-down"></i>
-    </a>
-	<div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#" class="w3-bar-item w3-button">Make a report</a>
-      <a href="#" class="w3-bar-item w3-button">View my reports</a>
-    </div>
-  </div>
+<div class="page-grid">
+<nav class="nav-left">
+    <h3>SEALEY</h3>
+    <ul>
+	    <li><a>Reports</a></li>
+	    <li><a class="child-list" href="#">Make a report</a></li>
+	    <li><a class="child-list" href="#">View my reports</a></li>
+  	</ul>
 </nav>
 
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24 w3-wide">SEALEY</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
+<div class="content-right">
   
   <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">Quotation</p>
+  <header>
+    <h1>Quotation</h1>
   </header>
-    <div class="w3-container w3-black w3-padding-32">
+    <div class="table-div">
 	<table>
 	<tr>
-	<th class="zero">Quotation No.:</th>
-	<th class="zero">Date:</th>
+	<th>Quotation No.:</th>
+	<th>Date:</th>
 	</tr>
 	<tr>
-    <td class="zero"><input class="w3-input w3-border" type="text" placeholder="" style="width:100%"></td>
-	<td class="zero"><input class="w3-input w3-border" type="text" placeholder="" style="width:100%"></td>
+    <td><input type="text" placeholder=""></td>
+	<td><input type="text" placeholder=""></td>
 	</tr>
 	<tr>
-	<th class="zero">Company Name:</th>
+	<th>Company Name:</th>
 	</tr>
 	<tr>
-    <td class="zero" colspan="2"><input class="w3-input w3-border" type="text" placeholder="" style="width:100%"></td>
+    <td colspan="2"><input type="text" placeholder=""></td>
 	</tr>
 	<tr>
-	<th class="zero">Contact Person:</th>
-	<th class="zero">Contact Number:</th>
+	<th>Contact Person:</th>
+	<th>Contact Number:</th>
 	</tr>
 	<tr>
-    <td class="zero"><input class="w3-input w3-border" type="text" placeholder="" style="width:100%"></td>
-	<td class="zero"><input class="w3-input w3-border" type="text" placeholder="" style="width:100%"></td>
+    <td><input type="text" placeholder=""></td>
+	<td><input type="text" placeholder=""></td>
 	</tr>
 	<tr>
-	<th class="zero">Address:</th>
+	<th>Address:</th>
 	</tr>
 	<tr>
-    <td class="zero" colspan="2"><input class="w3-input w3-border" type="text" placeholder="" style="width:100%"></td>
+    <td colspan="2"><input type="text" placeholder=""></td>
 	</tr>
 	<tr>
-    <td class="zero" colspan="2">Dear Sir, In compliance to your request, we hereby present to you our quotation and its terms and condition for your consideration.</td>
+    <td colspan="2">Dear Sir, In compliance to your request, we hereby present to you our quotation and its terms and condition for your consideration.</td>
 	</tr>
 	</table>
 	<br>
@@ -99,13 +81,13 @@
 	<td>Silent</td>
     </tr>
 	<tr>
-    <td class="zero" colspan="2">*Price above is TAX/VAT INCLUSIVE; FOB Manila</td>
+    <td colspan="2">*Price above is TAX/VAT INCLUSIVE; FOB Manila</td>
 	</tr>
 	</table>
 	<br>
-    <button type="button" class="w3-button w3-red w3-margin-bottom">SUBMIT</button>
+    <button type="button">SUBMIT</button>
   </div>
-
+</div>
   <!-- End page content -->
 </div>
 
