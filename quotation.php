@@ -12,7 +12,8 @@
 <!-- Sidebar/menu -->
 <div class="page-grid">
 <nav class="nav-left">
-    <h3>SEALEY</h3>
+    <h3><center>SEALEY</center></h3>
+	<br>
     <ul>
 	    <li><a>Reports</a></li>
 	    <li><a class="child-list" href="#">Make a report</a></li>
@@ -27,6 +28,7 @@
   <header>
     <h1>Quotation</h1>
   </header>
+  <br>
     <div class="table-div">
 	<table>
 	<tr>
@@ -92,43 +94,6 @@
 </div>
 
 <script>
-// Accordion 
-function myAccFunc() {
-    var x = document.getElementById("demoAcc");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
-
-
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-
-
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
 </script>
 
 </body>

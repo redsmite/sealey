@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 body, html{
   height:100%;
   margin:0;
@@ -145,14 +150,22 @@ li a:hover {
 }
 
 .teamimage{
-	text-align:right;
-	margin-top:-290px;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.red{
+  color: red;
+  font-size: 1.2em;
+  margin-right: 5px;
+  font-weight: bolder;
 }
 
 
 .cta-text{
+	display: inline-block;
 	text-align: left;
-	
+  line-height: 3em;
 }
 
 .pimg1, .pimg2, .pimg3{
@@ -186,7 +199,7 @@ li a:hover {
 
 .section{
   text-align:center;
-  padding:50px 80px;
+  padding:20px 80px;
 }
 
 .section-light{
@@ -218,6 +231,10 @@ li a:hover {
 
 .ptext .border.trans{
   background-color:transparent;
+}
+
+.map{
+  width:100%;
 }
 
 @media(max-width:568px){
@@ -392,6 +409,7 @@ span.psw {
 
 .content-right{
   grid-area: content;
+   white-space: normal;
 }
 
 .product-container{
@@ -463,4 +481,200 @@ span.psw {
 .sales-table h4{
   padding-left: 40px;
   color: black;
+}
+
+/* Products Page */
+
+.products-page{
+  background: #333;
+  min-height: 100vh;
+  padding: 20px 5%;
+}
+
+.products-header{
+  background: url('../img/product-header.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.products-page h1{
+  color: #fafafa;
+}
+
+.products-tab-div{
+  margin: 15px 0;
+}
+
+.products-tab{
+  display: inline-block;
+  background: white;
+  color: rgba(0,0,0,0.5);
+  padding: 2px 20px;
+  margin: 0 5px;
+  border-radius: 2px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+.products-tab-highlight{
+  background: #666;
+  color: #fafafa;
+}
+
+.products-content{
+  display: none;
+}
+
+.products-content-div{
+  display: inline-block;
+  margin: 10px;
+  background: #fafafa;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+  width: 250px;
+  min-height: 300px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.products-content-div img{
+  display: block;
+  margin: auto;
+  filter: saturate(0%);
+}
+
+.products-content-div img:hover{
+  filter: saturate(100%);
+}
+
+.content-button-red{
+  display: inline-block;
+  background: #d9232d;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content-button-green{
+  display: inline-block;
+  background: #5cb85c;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Admin Page */
+.activity-filter{
+  padding: 5px;
+  display: grid;
+  height: 100px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "input select";
+  height: 100px;
+}
+
+.filter-input{
+  grid-area: input;
+  height: 30px;
+}
+
+.filter-select{
+  margin-top: 8px;
+  grid-area: select;
+  height: 30px;
+}
+
+footer{
+  border-top: 3px solid #08605F;
+  background: #000;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+footer a{
+  color: #fafafa;
+  text-decoration: none;
+  padding: 10px;
+  transition: 350ms;
+  transition-property: color;
+}
+
+footer a:hover{
+  color: orange;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #d28b8b;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #7d3e3e;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* Contact Page */
+#contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contact-left contact-right";
+}
+
+.contact-left
+{
+ grid-area: contact-left;
+}
+
+.contact-left button{
+  padding: 0.5em;
+  font-size: 0.75em;
+}
+
+.contact-right
+{
+  grid-area: contact-right;
+}
+
+.modal-tab{
+  display: inline-block;
+  padding: 8px 10px 0 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  border-radius: 8px 8px 0 0;
+  border-top: 1px solid #fafafa;
+  border-left: 1px solid #fafafa;
+  border-right: 1px solid #fafafa;
+  cursor: pointer;
+  margin-right: 5px;
 }

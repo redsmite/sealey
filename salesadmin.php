@@ -15,10 +15,12 @@
 	<h3><center>SEALEY</center></h3>
 	<br>
   <ul>
-  	<li><a href="salesreport.php">Create Sales Report</a></li>
-  	<li><a>View my Reports</a></li>
-    <li class="child-list"><a href="#">Update</a></li>
-    <li class="child-list"><a href="#">Delete</a></li>
+    <li><a href="inventoryadmin.php">Inventory</a></li>
+    <li><a href="salesadmin.php">Sales</a></li>
+    <li><a href="scheduleadmin.php">Schedule</a></li>
+	<li><a href="activitylogadmin.php">Activity Log</a></li>
+	<li><a href="accountsadmin.php">Accounts</a></li>
+	<li><a href="index.php">Logout</a></li>
   </ul>
 </nav>
 

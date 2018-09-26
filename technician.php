@@ -15,45 +15,25 @@
     <h3><center>SEALEY</center></h3>
 	<br>
   <ul>
-	<li><a href="index.php">Home</a></li>
-  	<li><a href="clientpage.php">My profile</a></li>
-  	<li><a href="#">View previous transactions</a></li>
-	<li><a href="clientquotation.php">Create new quotation</a></li>
-	<li><a href="#">Log-out</a></li>
+	<li><a href="#">Scheduled Appointment</a></li>
+  	<li><a href="servicereport.php">Service report</a></li>
+	<li><a href="index.php">Log-Out</a></li>
   </ul>
 </nav>
-
 <!-- !PAGE CONTENT! -->
 <div class="content-right">
   
   <!-- Top header -->
   <header>
-    <h1>Client Page</h1>
+    <h1>Technician</h1>
   </header>
   <br>
-  <!-- Account Information -->
-<div class="sales-table">
-<h3>TRANSACTIONS</h3>
-        <table>
-  <tr>
-    <th>DATE</th>
-    <th>NAME</th>
-	<th>GENSET/PARTS</th>
-	<th>AMOUNT</th>
-	<th>SOLD BY</th>
-	<th>REMARKS</th>
-  </tr>
-  <tr>
-    <td>January 3,2017</td>
-    <td>Juan Dela Cruz</td>
-    <td>Generator</td>
-	<td>495535.71</td>
-    <td>Cherry</td>
-	<th>Fully Paid</th>
-  </tr>
-		</table>
-  <br>
+  <!-- Sales -->
+ <div class="sales-table">
+  	  <p><center>WALA SYANG APPOINTMENT NGAYON!</center></p>
 </div>
+  
+  
 </div>
   <!-- End page content -->
 </div>

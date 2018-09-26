@@ -14,18 +14,17 @@
     <h3><center>SEALEY</center></h3>
 	<br>
   <ul>
-    <li><a href="inventoryadmin.php">Inventory</a></li>
-    <li><a href="salesadmin.php">Sales</a></li>
-    <li><a href="scheduleadmin.php">Schedule</a></li>
-	<li><a href="activitylogadmin.php">Activity Log</a></li>
-	<li><a href="accountsadmin.php">Accounts</a></li>
+    <li><a href="inventoryboss.php">Inventory</a></li>
+    <li><a href="salesboss.php">Sales</a></li>
+    <li><a href="scheduleboss.php">Schedule</a></li>
+	<li><a href="activitylogboss.php">Activity Log</a></li>
+	<li><a href="accountsboss.php">Accounts</a></li>
 	<li><a href="index.php">Logout</a></li>
   </ul>
 </nav>
 
 <!-- !PAGE CONTENT! -->
 <div class="content-right">
-  
 	<br>
 	<div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Quotation')">Quotation</button>

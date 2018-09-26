@@ -25,32 +25,10 @@
 
 <!-- !PAGE CONTENT! -->
 <div class="content-right">
-  
+  <h1>Activity Log</h1>
 	<br>
-	<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Quotation')">Quotation</button>
-  <button class="tablinks" onclick="openCity(event, 'Appointment')">Appointment</button>
-  <button class="tablinks" onclick="openCity(event, 'Parts')">Parts</button>
-	</div>
-
-<div id="Quotation" class="tabcontent">
-  <h3>Quotation</h3>
-  <br>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Appointment" class="tabcontent">
-  <h3>Appointment</h3>
-  <br>
-  <p>Paris is the capital of France.</p> 
-</div>
-
-<div id="Parts" class="tabcontent">
-  <h3>Parts</h3>
-  <br>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-</div>
+  DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! DIV MO TO! 
+  
   <!-- End page content -->
 </div>
 

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sealey Enterprise Corporation</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
 <ul>
@@ -15,6 +15,7 @@
   <li><a href="products.php">Products</a></li>
   <li><a href="services.php">Services</a></li>
   <li><a href="contact.php">Contact</a></li>
+  <li><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Request a quote</button></li>
   <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
 </ul>
 
@@ -43,6 +44,53 @@
   </form>
 </div>
 
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="kva"><b>KVA RATING :</b></label>
+      <input type="text" placeholder="Enter KVA Rating" name="kva" required><br><br>
+      
+	  <label for="brand"><b>BRAND :</b></label>
+		<select>        
+            <option value="Cummins">Cummins</option>
+            <option value="Deutz">Deutz</option>
+            <option value="Perkins">Perkins</option>
+            <option value="Weichai">Weichai</option>
+			<option value="Isuzu">Isuzu</option>
+			<option value="FAW">FAW</option>
+		</select><br><br>
+		
+	  <label for="phase"><b>PHASE :</b></label>
+		<select>        
+            <option value="Single">Single</option>
+            <option value="Three">Three</option>
+		</select><br><br>
+		
+	  <label for="volts"><b>VOLTS :</b></label>
+		<select>        
+            <option value="220v">220v</option>
+            <option value="440v">440v</option>
+		</select><br><br>
+		
+	  <label for="alternator"><b>ALTERNATOR :</b></label>
+		<select>        
+            <option value="Marathon">Marathon</option>
+            <option value="Watex">Watex</option>
+            <option value="Stamford">Stamford</option>
+		</select><br><br>
+	  
+	  
+      <button type="submit">Submit</button>
+    </div>
+
+  </form>
+</div>
+
 
   <div class="pimg1">
     <div class="ptext">
@@ -64,9 +112,9 @@
     <div class="ptext">
       <span class="border trans">
 		<i class="fa fa-cube" style="font-size:80px;color:white"></i>
-		<i class="fa fa-flash" style="font-size:80px;color:white"></i>
-		<i class="fa fa-lightbulb-o" style="font-size:80px;color:white"></i>
-		<i class="fa fa-gear" style="font-size:80px;color:white"></i>
+		<i class="fa fa-bolt" style="font-size:80px;color:white"></i>
+		<i class="fa fa-lightbulb" style="font-size:80px;color:white"></i>
+		<i class="fa fa-cog" style="font-size:80px;color:white"></i>
       </span>
     </div>
   </div>
@@ -79,12 +127,12 @@
 	<br>
 					
 						<div class="cta-text">
-							<h2><span>S</span>ecured Brands</h2>
-							<h2><span>E</span>xclusive Distributor</h2>
-							<h2><span>A</span>ssurance</h2>
-							<h2><span>L</span>evering After-Sales Services</h2>
-							<h2><span>E</span>stablished Reputation</h2>
-							<h2><span>Y</span>ield More.</h2>
+							<h2><span class="red">S</span>ecured Brands</h2>
+							<h2><span class="red">E</span>xclusive Distributor</h2>
+							<h2><span class="red">A</span>ssurance</h2>
+							<h2><span class="red">L</span>evering After-Sales Services</h2>
+							<h2><span class="red">E</span>stablished Reputation</h2>
+							<h2><span class="red">Y</span>ield More.</h2>
 						</div>
 						
 						<div class="teamimage">
@@ -125,13 +173,11 @@
     </p>
   </section>
 
-  <div class="pimg1">
-    <div class="ptext">
-      <span class="border">
-        © Sealey Enterprise Corporation - All Right Reserved
-      </span>
-    </div>
-  </div>
+  <footer>
+    <a href="https://www.facebook.com/sealeyenterprises/"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/Sealeytools?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+    <p>© Sealey Enterprise Corporation - All Right Reserved</p>
+  </footer>
   
 
   <script>
@@ -139,6 +185,7 @@
 
 // Get the modal
 var modal = document.getElementById('id01');
+var modal = document.getElementById('id02');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {

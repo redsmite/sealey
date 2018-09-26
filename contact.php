@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sealey Enterprise Corporation</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <ul>
@@ -15,6 +14,7 @@
   <li><a href="products.php">Products</a></li>
   <li><a href="services.php">Services</a></li>
   <li><a class="active" href="contact.php">Contact</a></li>
+  <li><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Request a quote</button></li>
   <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
 </ul>
 
@@ -43,6 +43,54 @@
   </form>
 </div>
 
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <h2>GENSET</h2>
+      <label for="kva"><b>KVA RATING :</b></label>
+      <input type="text" placeholder="Enter KVA Rating" name="kva" required><br><br>
+      
+	  <label for="brand"><b>BRAND :</b></label>
+		<select>        
+            <option value="Cummins">Cummins</option>
+            <option value="Deutz">Deutz</option>
+            <option value="Perkins">Perkins</option>
+            <option value="Weichai">Weichai</option>
+			<option value="Isuzu">Isuzu</option>
+			<option value="FAW">FAW</option>
+		</select><br><br>
+		
+	  <label for="phase"><b>PHASE :</b></label>
+		<select>        
+            <option value="Single">Single</option>
+            <option value="Three">Three</option>
+		</select><br><br>
+		
+	  <label for="volts"><b>VOLTS :</b></label>
+		<select>        
+            <option value="220v">220v</option>
+            <option value="440v">440v</option>
+		</select><br><br>
+		
+	  <label for="alternator"><b>ALTERNATOR :</b></label>
+		<select>        
+            <option value="Marathon">Marathon</option>
+            <option value="Watex">Watex</option>
+            <option value="Stamford">Stamford</option>
+		</select><br><br>
+	  
+	  
+      <button type="submit">Submit</button>
+    </div>
+
+  </form>
+</div>
+
 
   <div class="pimg1">
     <div class="ptext">
@@ -54,18 +102,27 @@
   </div>
 
   <section class="section section-light">
+  <div id="contact-grid">
+  <div class="contact-left">
     <h2>Contact Us</h2>
     <p>
       Get in touch with us by filling form below.
 	  
-<p>Name:</p> <input type="text" name="lname" form="form1">
-<p>Email:</p> <input type="text" name="lname" form="form1">
-<p>Subject:</p> <input type="text" name="lname" form="form1">
-<p>Message:</p> <textarea rows="4" cols="150"></textarea>
-<button type="submit" form="nameform" value="Submit">Submit</button>
+    <p>Name:</p> <input type="text" name="lname" form="form1" style="width:40%;">
+    <p>Email:</p> <input type="text" name="lname" form="form1" style="width:40%;">
+    <p>Subject:</p> <textarea rows="5" cols="70"></textarea>
+    <p>Message:</p> <textarea rows="5" cols="70"></textarea>
+    <br>
+    <button type="submit" form="nameform" value="Submit" style="width:10%;">Submit</button>
 
-    </p>
+        </p>
+	</div>
 	
+	<div class="contact-right">
+	<h1><center>LOCATION</center></h1>
+    <div id="googleMap" style="width:100;height:400px;"></div>
+	 </div>
+  </div>
   </section>
 
   <section class="section section-dark">
@@ -89,20 +146,17 @@
     </p>
   </section>
 
-  <div class="pimg1">
-    <div class="ptext">
-      <span class="border">
-        © Sealey Enterprise Corporation - All Right Reserved
-      </span>
-    </div>
-  </div>
+  <footer>
+    <a href="https://www.facebook.com/sealeyenterprises/"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/Sealeytools?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+    <p>© Sealey Enterprise Corporation - All Right Reserved</p>
+  </footer>
   
 
   <script>
-
-
 // Get the modal
 var modal = document.getElementById('id01');
+var modal = document.getElementById('id02');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -111,7 +165,17 @@ window.onclick = function(event) {
     }
 }
 
+
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(40.713732,-74.0092704),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
 </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
 
 </body>
